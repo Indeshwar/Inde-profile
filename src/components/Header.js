@@ -6,17 +6,15 @@ import Nav from "react-bootstrap/Nav";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { UseSelector, useDispatch, useSelector} from "react-redux";
+import { handleShowOffcanvas, handleCloseOffcanvas } from "../reduxfeature/showSlice";
+import Menubar from "./Menubar";
+import './style.css';
 
 const Header = () => {
-
-  const [show, setShow] = useState(false);
-  const handleCloseOffcanvas =()=>{
-    setShow(false)
-  }
-
-  const handleShowOffcanvas=()=>{
-    setShow(true)
-  }
+  
+  const show = useSelector((state)=> state.show.value)
+  const dispatch = useDispatch();
 
   return (
     <>
@@ -28,22 +26,28 @@ const Header = () => {
       >
         <Container>
           <Navbar.Brand href="#home">Indeshwar</Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={handleShowOffcanvas}/>
-          <Navbar.Offcanvas show={show} onHide={handleCloseOffcanvas}
-            className="offcanvas-start text-bg-dark"
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            onClick={()=>dispatch(handleShowOffcanvas())}
+          />
+
+          {/* if screen size large, display Nav Menubar */}
+          <Navbar.Collapse id="responsive-navbar-nav" className="menu-navbar">
+            <Menubar/>
+          </Navbar.Collapse>
+
+          {/* if screen is small, display Toggle Menubar */}
+          <Navbar.Offcanvas
+            show={show}
+            onHide={()=>dispatch(handleCloseOffcanvas())}
+            className="offcanvas-start text-bg-dark toggle-navbar"
             tabindex="-1"
           >
-
             <Offcanvas.Header closeButton>
               <Offcanvas.Title>Indeshwar</Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body className="bg-dark">
-              <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link as={Link} to="/" onClick={handleCloseOffcanvas} >Home</Nav.Link>
-                <Nav.Link as={Link} to="/services" onClick={handleCloseOffcanvas}>Services</Nav.Link>
-                <Nav.Link as={Link} to="/portfolio" onClick={handleCloseOffcanvas}>Portfolio</Nav.Link>
-                <Nav.Link as={Link} to="/contact" onClick={handleCloseOffcanvas}>Contact</Nav.Link>
-              </Nav>
+              <Menubar/>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
         </Container>
