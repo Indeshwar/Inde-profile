@@ -1,11 +1,8 @@
-import Alert from "react-bootstrap/Alert";
-import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import { UseSelector, useDispatch, useSelector} from "react-redux";
 import { handleShowOffcanvas, handleCloseOffcanvas } from "../reduxfeature/showSlice";
 import Menubar from "./Menubar";
@@ -41,7 +38,7 @@ const Header = () => {
             show={show}
             onHide={()=>dispatch(handleCloseOffcanvas())}
             className="offcanvas-start text-bg-dark toggle-navbar"
-            tabindex="-1"
+            tabIndex="-1"
           >
             <Offcanvas.Header closeButton>
               <Offcanvas.Title>Indeshwar</Offcanvas.Title>
