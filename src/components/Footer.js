@@ -1,10 +1,11 @@
 import React from "react";
+import  Card  from "react-bootstrap/Card";
 
 const Footer = () => {
   return (
-    <>
-      <h1>Hello</h1>
-    </>
+    <div>
+      
+    </div>
   );
 };
 
