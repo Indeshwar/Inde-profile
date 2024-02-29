@@ -7,11 +7,11 @@ import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
-
+import FootBar from './components/FootBar';
+import './App.css';
 function App() {
   return (
     <>
-      
       <Router>
         <Header/>
         <Routes>
@@ -21,6 +21,7 @@ function App() {
           <Route path="/Blog" element={<Blog/>} />
           <Route path="/contact" element={<Contact/>} />
         </Routes>
+        <FootBar/>
       </Router>
     </>
   );
