@@ -10,7 +10,7 @@ function Menubar() {
   return (
     <>
       <Nav className="justify-content-end flex-grow-1 pe-3">
-        <Nav.Link
+        <Nav.Link active
           as={Link}
           to="/"
           onClick={() => dispatch(handleCloseOffcanvas())}
