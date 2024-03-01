@@ -15,7 +15,7 @@ function Menubar() {
           to="/"
           onClick={() => dispatch(handleCloseOffcanvas())}
         >
-          Home
+          About
         </Nav.Link>
         <Nav.Link
           as={Link}
