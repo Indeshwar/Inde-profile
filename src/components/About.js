@@ -3,8 +3,8 @@ import exampleImage from "../images/indesh.jpg";
 function About() {
   return (
     <>
-      <div className="container-fluid">
-        <div className="row">
+      <div className="container-fluid content">
+        <div className="row pt-4">
           <div className="col">
             <h1 className="demo">About Me</h1>
             <div className="demo">
@@ -44,7 +44,7 @@ function About() {
         </div>
       </div>
     </>
-    
+
   );
 }
 
