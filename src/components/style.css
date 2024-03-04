@@ -53,7 +53,7 @@
   
   li {
     display: inline-block; /* Display list items horizontally */
-    margin-right: 10px; /* Add space between list items */
+    margin-right: 30px; /* Add space between list items */
   }
 
   .demo{
@@ -95,6 +95,24 @@
     flex: 1; /* Allow contents to grow and shrink equally */
     padding: 10px; /* Add padding as needed */
   }
+
+  .social-media-frame{
+    width: 50px;
+    height: 40px;
+    border-radius: 100%;
+  }
+
+.title{
+
+    text-align: center;
+    margin: 20px 0;
+
+}
+
+.content {
+    padding-bottom: 150px; /* Adjust 50px to provide space for the footer */
+    /* Add any other necessary styles */
+}
 
   
 
