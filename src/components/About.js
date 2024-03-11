@@ -1,11 +1,13 @@
 import React from "react";
 import exampleImage from "../images/indesh.jpg";
+import Card from "./UI/Card";
 function About() {
   return (
     <>
       <div className="container-fluid content">
         <div className="row pt-4">
           <div className="col">
+            <Card>
             <h1 className="demo">About Me</h1>
             <div className="demo">
               <p>
@@ -36,7 +38,9 @@ function About() {
                 together!
               </p>
             </div>
+            </Card>
           </div>
+         
           <div className="col">
             <h2>Indeshwar Chaudhary</h2>
             <img src={exampleImage} alt="Example" className="frame" />
