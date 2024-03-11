@@ -1,7 +1,7 @@
 import React from "react";
 import { Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { UseSelector, useDispatch, useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { handleShowOffcanvas, handleCloseOffcanvas } from "../reduxfeature/showSlice";
 
 function Menubar() {
