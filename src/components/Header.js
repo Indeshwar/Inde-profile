@@ -3,7 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { UseSelector, useDispatch, useSelector} from "react-redux";
+import { useDispatch, useSelector} from "react-redux";
 import { handleShowOffcanvas, handleCloseOffcanvas } from "../reduxfeature/showSlice";
 import Menubar from "./Menubar";
 import './style.css';
