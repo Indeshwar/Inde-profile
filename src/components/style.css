@@ -70,7 +70,7 @@ li {
   /* Add space between list items */
 }
 
-.demo {
+.about-content {
   margin: 20px;
   padding-left: 20px;
   font-size: large;
@@ -133,7 +133,7 @@ li {
 
 }
 
-.content {
+.p-buttom {
   padding-bottom: 150px;
   /* Adjust 50px to provide space for the footer */
   /* Add any other necessary styles */
@@ -148,7 +148,12 @@ li {
   background-color: lightgoldenrodyellow;
 }
 
-.h1 {
+.title {
   text-align: center;
   padding: 10px;
+}
+
+.title-content {
+  text-align: center;
+  padding-bottom: 30px;
 }

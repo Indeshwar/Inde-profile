@@ -6,13 +6,15 @@ const initialState = {
         {
             id: 1,
             title: 'Personal Website',
-            description: 'Describe about my project Describe about my project Describe about my project Describe about my project Describe about my project'
+            description: "This personal website is crafted using modern web development technologies, including React.js for dynamic and interactive user interfaces, Bootstrap for responsive design and layout, and CSS/HTML for styling and structure. The combination of these technologies ensures a seamless and engaging user experience across different devices and screen sizes.",
+            link: "https://github.com/Indeshwar/Inde-profile"
         },
 
         {
             id: 2,
             title: 'School Website',
-            description: 'Website for School'
+            description: 'Website for School',
+            link: "https://github.com/Indeshwar/Inde-profile"
         }
     ],
 

@@ -14,6 +14,7 @@ function Menubar() {
           as={Link}
           to="/"
           onClick={() => dispatch(handleCloseOffcanvas())}
+          className="d-inline-flex focus-ring focus-ring-success py-1 px-2 text-decoration-none  rounded-2"
         >
           About
         </Nav.Link>
@@ -21,6 +22,7 @@ function Menubar() {
           as={Link}
           to="/portfolio"
           onClick={() => dispatch(handleCloseOffcanvas())}
+          className="d-inline-flex focus-ring focus-ring-success py-1 px-2 text-decoration-none  rounded-2"
         >
           Portfolio
         </Nav.Link>
@@ -28,6 +30,7 @@ function Menubar() {
           as={Link}
           to="/skills"
           onClick={() => dispatch(handleCloseOffcanvas())}
+          className="d-inline-flex focus-ring focus-ring-success py-1 px-2 text-decoration-none  rounded-2"
         >
           Skills
         </Nav.Link>
@@ -35,6 +38,7 @@ function Menubar() {
           as={Link}
           to="/resume"
           onClick={() => dispatch(handleCloseOffcanvas())}
+          className="d-inline-flex focus-ring focus-ring-success py-1 px-2 text-decoration-none  rounded-2"
         >
           Resume
         </Nav.Link>
@@ -42,6 +46,7 @@ function Menubar() {
           as={Link}
           to="/contact"
           onClick={() => dispatch(handleCloseOffcanvas())}
+          className="d-inline-flex focus-ring focus-ring-success py-1 px-2 text-decoration-none  rounded-2"
         >
           Contact
         </Nav.Link>
