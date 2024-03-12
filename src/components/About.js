@@ -4,12 +4,12 @@ import Card from "./UI/Card";
 function About() {
   return (
     <>
-      <div className="container-fluid content">
+      <div className="container-fluid p-buttom">
         <div className="row pt-4">
           <div className="col">
             <Card>
-            <h1 className="demo">About Me</h1>
-            <div className="demo">
+            <h1 className="about-content">About Me</h1>
+            <div className="about-content">
               <p>
                 Hello! I'm Indeshwar, a passionate software developer with
                 expertise in Java, JavaScript, HTML, CSS, React.js, Bootstrap,
@@ -28,7 +28,7 @@ function About() {
                 across different devices and screen sizes.
               </p>
             </div>
-            <div className="demo">
+            <div className="about-content">
               <p>
                 I am excited about the opportunity to work on impactful projects
                 and contribute to the advancement of technology. Feel free to
