@@ -7,13 +7,13 @@ function Skills() {
 
   const skillList = (
     <div className="container-fluid">
-      <ul className="row">
+      <ul className="row ul">
         {skills.map((s) => (
           <li key={s.id} className="col-lg-5 col-md-5 col-sm-12 main-content">
             <h2>{s.title}</h2>
             <div>
               {s.name.map((n) => (
-                <li>{n}</li>
+                <li className="li">{n}</li>
               ))}
             </div>
           </li>
@@ -23,7 +23,7 @@ function Skills() {
   );
 
   return <Card>
-    <h1 className="h1">Skills</h1>
+    <h1 className="title">Skills</h1>
     {skillList}
     </Card>;
 }
