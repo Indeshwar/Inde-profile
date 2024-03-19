@@ -8,8 +8,8 @@ function About() {
         <div className="row pt-4">
           <div className="col">
             <Card>
-            <h1 className="about-content">About Me</h1>
-            <div className="about-content">
+            <h1 className="content">About Me</h1>
+            <div className="content">
               <p>
                 Hello! I'm Indeshwar, a passionate software developer with
                 expertise in Java, JavaScript, HTML, CSS, React.js, Bootstrap,
@@ -28,7 +28,7 @@ function About() {
                 across different devices and screen sizes.
               </p>
             </div>
-            <div className="about-content">
+            <div className="content">
               <p>
                 I am excited about the opportunity to work on impactful projects
                 and contribute to the advancement of technology. Feel free to
