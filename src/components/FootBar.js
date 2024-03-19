@@ -10,10 +10,10 @@ function FootBar() {
             <div className='row'>
                 <div className='col'>
                     <h2>Find me</h2>
-                    <ul>
-                        <li ><img className='social-media-frame' src={instagram} alt='Instagram'/></li>
-                        <li ><img className='social-media-frame' src={facebook} alt='Facebook'/></li>
-                        <li ><a href='https://www.linkedin.com/feed/'><img className='social-media-frame' src={linkdin} alt='Linkdin'/></a></li>
+                    <ul className='ul'>
+                        <li className='li'><img className='social-media-frame' src={instagram} alt='Instagram'/></li>
+                        <li className='li'><img className='social-media-frame' src={facebook} alt='Facebook'/></li>
+                        <li className='li'><a href='https://www.linkedin.com/feed/'><img className='social-media-frame' src={linkdin} alt='Linkdin'/></a></li>
                     </ul>
                 </div>
             </div>
