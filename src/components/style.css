@@ -54,7 +54,7 @@ footer {
   padding: 20px 0;
 }
 
-ul {
+.ul {
   list-style: none;
   /* Remove default list styles */
   padding: 0;
@@ -63,15 +63,15 @@ ul {
   /* Remove default margin */
 }
 
-li {
+.li {
   display: inline-block;
   /* Display list items horizontally */
   margin-right: 30px;
   /* Add space between list items */
 }
 
-.about-content {
-  margin: 20px;
+.content {
+  margin: 10px;
   padding-left: 20px;
   font-size: large;
 }
@@ -126,12 +126,6 @@ li {
   border-radius: 100%;
 }
 
-.title {
-
-  text-align: center;
-  margin: 20px 0;
-
-}
 
 .p-buttom {
   padding-bottom: 150px;
@@ -142,6 +136,7 @@ li {
 .main-content {
   width: 100%;
   margin: 10px;
+  margin-bottom: 20px;
   padding: 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   border-radius: 14px;

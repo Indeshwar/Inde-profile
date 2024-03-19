@@ -11,8 +11,8 @@ function Contact() {
           <div className="col-lg-6 col-sm-12 m-auto">
             <h1 className="title">Contact Me !</h1>
             <div>
-              <ul className="title-content">
-                <li>
+              <ul className="title-content ul">
+                <li className="li">
                   <img
                     src={contact}
                     alt="contanct"
@@ -20,7 +20,7 @@ function Contact() {
                   />
                   312-522-5914
                 </li>
-                <li>
+                <li className="li">
                   <img src={email} alt="email" className="social-media-frame" />
                   indeshwar.csdeveloper@gmail.com
                 </li>
