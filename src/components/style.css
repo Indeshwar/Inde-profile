@@ -143,6 +143,17 @@ footer {
   background-color: lightgoldenrodyellow;
 }
 
+.download-content{ 
+  margin: auto;
+  margin-top: 5rem;
+  border-radius: 14px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px ;
+  background-color: rgb(250, 250, 238);
+  width: 80%;
+  height: 15rem;
+}
+
 .title {
   text-align: center;
   padding: 10px;
